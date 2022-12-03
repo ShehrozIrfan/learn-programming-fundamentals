@@ -4,6 +4,7 @@
 1. You can contribute in terms of Code:
    - By adding a new `topic` and `code` related to that topic
    - By adding programming fundamentals concepts in other languages like `java`, `python`, `ruby`, `javascript` etc
+   - Visit [issues](https://github.com/ShehrozIrfan/learn-programming-fundamentals/issues)
 2. You can contribute in terms of documentation:
    - By adding the documentation for any `programming-fundamentals` concept
 
