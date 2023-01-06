@@ -24,7 +24,8 @@ int main()
   //Now we can also use a pointer to create an array
   
   int* arr = new int[10]; //Creates an array of size 10 on heap
-  for(int i = 0; i<10 ;i++)
+  int i = 0;
+  for(; i<10 ;i++)
   {
     *(arr+i) = 0;         //Initializes array to zero also *(arr+i) is equal to arr[i]
   }
