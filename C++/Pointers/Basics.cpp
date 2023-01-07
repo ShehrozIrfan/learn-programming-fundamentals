@@ -24,15 +24,20 @@ int main()
   //Now we can also use a pointer to create an array
   
   int* arr = new int[10]; //Creates an array of size 10 on heap
-  int i = 0;
-  for(; i<10 ;i++)
+  
+  for(int i = 0; i < 10 ;i++)
   {
-    *(arr+i) = 0;         //Initializes array to zero also *(arr+i) is equal to arr[i]
+    *(arr+i) = 10;         //Initializes array to zero also *(arr+i) is equal to arr[i]
+  }
+ 
+  //Now we can also transverse an array using pointers
+  //Also keep in mind we have to put NULL at end of array 
+  for(int* curr = arr; curr!= NULL || cur < arr+10 ;curr++) //if we have size we can just limit by putting size else we can also put NULL ptr at end of array and check it in loop
+  {
+    cout << *curr <<endl;
   }
   
-  //Now we can also transverse an array using pointers
-  for(int* curr = arr; curr!= NULL;curr++)
-  {
-    cout << *curr<<endl;
-  }
+  //Keep in mind after declaring an array on heap it becomes programmers responsibility to delete it
+  //Deleting an array using pointer is quite easy
+  delete[] arr;
 }
