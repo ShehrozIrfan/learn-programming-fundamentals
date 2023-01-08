@@ -20,12 +20,13 @@ and multi-line comments. Single-line comments start with // and
 extend to the end of the line. Multi-line comments start with /* 
 and end with */ .
 **Example**  
+```java
 // This is a single-line comment
-
 /*
 This is a
 multi-line comment
 */
+```
 ## 3. Variables
  Variables are used to store values in a program. 
  In Java, you must declare a variable before you can use
