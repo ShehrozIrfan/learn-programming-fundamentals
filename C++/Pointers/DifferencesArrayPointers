@@ -14,4 +14,4 @@ int main(){
     *(v+3) = *(w+3); //valid, assigns a value of w to a position of v
     cout << (v < ptr) << endl; //valid, check which memory position comes first 
     cout << v << " " << ptr << " " << w << endl; //prints the memory location of v and ptr which is w 
-
+}
