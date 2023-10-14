@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int v[5] = {1,2,3,4,5};
+    int w[5] = {5,4,3,2,1};
+    int * ptr = v;
+    ptr++;  //compile and valid 
+    cout << *(v+3) << endl; //valid
+    //v++;   //no compile
+    //v = w; //no compile
+    ptr = w; //valid, now points to w
+    *(v+3) = *(w+3); //valid, assigns a value of w to a position of v
+    cout << (v < ptr) << endl; //valid, check which memory position comes first 
+    cout << v << " " << ptr << " " << w << endl; //prints the memory location of v and ptr which is w 
+
